@@ -23,10 +23,8 @@
 <body class="manrope">
     <header class="bg-gradient-to-b from-[rgba(255,255,255,100%)] to-[rgba(255,255,255,50%)]">
         <nav class="navbar flex mx-auto lg:container " id="nav">
-            <div class="navbar-start">
-              <div class="dropdown">
-              </div>
-              <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] text-black h-8 w-8 flex flex-row items-center justify-center text-xl"></i>
+            <div class="navbar-start pl-2 md:pl-0">
+              <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] text-black h-8 w-8 flex flex-row items-center justify-center text-xl "></i>
               <h1 class="text-3xl font-bold">Rinterio</h1>
             </div>
             <div class="navbar-center hidden lg:flex">
@@ -38,11 +36,21 @@
                 <li><a>Contact Us</a></li>
               </ul>
             </div>
-            <div class="navbar-end gap-4">
+            <div class="navbar-end gap-4 px-2">
                 <button><i class="fa-solid fa-magnifying-glass rounded-full bg-[#FFFFFF] text-black p-2 rounded-2xl text-lg drop-shadow h-10 w-10 flex items-center justify-center  md:flex hidden"></i></button>
                 <button><i class="fa-solid fa-cart-shopping rounded-full bg-[#FFFFFF] text-black p-2 rounded-2xl text-xl drop-shadow h-10 w-10 flex items-center justify-center  md:flex hidden"></i></button>
                 <button class="btn hover:bg-green-200 bg-[#ABEF5F] text-[#1C1C1C] border-none rounded-3xl text-xl  md:flex hidden">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#1c1c1c] text-white p-2  md:flex hidden"></i></button>
-                <i class="fa-solid fa-bars rounded-full bg-[#FFFFFF] text-black p-2 rounded-2xl text-lg drop-shadow h-10 w-10 flex items-center justify-center md:hidden"></i>
+                
+                <div class="dropdown dropdown-end md:hidden">
+                  <div tabindex="0" role="button"><i class="fa-solid fa-bars rounded-full bg-[#FFFFFF] text-black p-2 rounded-2xl text-lg drop-shadow h-10 w-10 flex items-center justify-center"></i></div>
+                  <ul tabindex="0" class="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
             </div>
         </nav>
         <section class="hero"> 
@@ -143,7 +151,7 @@
               <div class="cards bg-white lg:col-span-2 p-4 border rounded-3xl flex justify-center items-center md:hidden">
                 <img class="w-11/12" src="./assets/img5.png" alt="">
             </div>
-              <div class="cards bg-white lg:col-span-2 p-4 border rounded-3xl flex justify-center items-center">
+              <div class="cards bg-white lg:col-span-2 p-4 border rounded-3xl flex justify-center items-center hidden lg:flex">
                   <img class="w-11/12" src="./assets/img3.png" alt="">
               </div>
               <div class="cards bg-white lg:col-span-5 border p-8 rounded-3xl flex flex-col lg:flex-row gap-10">
@@ -155,6 +163,9 @@
                       <button class="text-2xl font-black">View Details  <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] text-black p-1"></i></button>
                     </div>
                   </div>
+              </div>
+              <div class="cards bg-white lg:col-span-2 p-4 border rounded-3xl flex justify-center items-center lg:hidden">
+                <img class="w-11/12" src="./assets/img3.png" alt="">
               </div>
               <div class="cards bg-white lg:col-span-2 p-4 border rounded-3xl flex justify-center items-center">
                   <img class="w-11/12" src="./assets/img5.png" alt="">
@@ -211,7 +222,7 @@
                 <button class="btn bg-[rgba(171,239,95,50%)] hover:bg-[rgba(171,239,95,50%)] border-none rounded-3xl text-black p-24 lg: p-4"><i class="fa-solid fa-arrow-right"></i>Book Know!</button>
                 <button class="btn bg-white border-none rounded-3xl text-black p-24 lg: p-4"><i class="fa-solid fa-arrow-right "></i>Read More</button>
               </div>
-              <div class="flex gap-8 flex-col lg:flex-row justify-center items-center">
+              <div class="flex gap-8 flex-col lg:flex-row justify-center items-center lg:justify-start">
                 <div>
                   <h1 class="text-6xl font-black">120+</h1>
                   <p class="text-center lg:text-left">Customers</p>
