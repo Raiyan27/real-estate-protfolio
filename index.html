@@ -26,11 +26,12 @@
             <div class="navbar-start">
               <div class="dropdown">
               </div>
-              <h1 class="text-2xl"><i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] text-black p-1"></i>  Rinterio</span></h1>
+              <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] text-black h-8 w-8 flex flex-row items-center justify-center text-xl"></i>
+              <h1 class="text-3xl font-bold">Rinterio</h1>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-[#737373] text-lg">
-                <li><a><span class="text-[#494949]">Home</span></a></li>
+              <ul class="menu menu-horizontal px-1 text-[#737373] text-lg hidden lg:flex">
+                <li><a><span class="text-[#494949] font-bold">Home</span></a></li>
                 <li><a>Services</a></li>
                 <li><a>Portfolio</a></li>
                 <li><a>Blogs</a></li>
@@ -38,8 +39,8 @@
               </ul>
             </div>
             <div class="navbar-end gap-4">
-                <i class="fa-solid fa-magnifying-glass rounded-full bg-[#FFFFFF] text-black p-2 rounded-2xl text-lg drop-shadow h-10 w-10 flex items-center justify-center  md:flex hidden"></i>
-                <i class="fa-solid fa-cart-shopping rounded-full bg-[#FFFFFF] text-black p-2 rounded-2xl text-xl drop-shadow h-10 w-10 flex items-center justify-center  md:flex hidden"></i>
+                <button><i class="fa-solid fa-magnifying-glass rounded-full bg-[#FFFFFF] text-black p-2 rounded-2xl text-lg drop-shadow h-10 w-10 flex items-center justify-center  md:flex hidden"></i></button>
+                <button><i class="fa-solid fa-cart-shopping rounded-full bg-[#FFFFFF] text-black p-2 rounded-2xl text-xl drop-shadow h-10 w-10 flex items-center justify-center  md:flex hidden"></i></button>
                 <button class="btn hover:bg-green-200 bg-[#ABEF5F] text-[#1C1C1C] border-none rounded-3xl text-xl  md:flex hidden">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#1c1c1c] text-white p-2  md:flex hidden"></i></button>
                 <i class="fa-solid fa-bars rounded-full bg-[#FFFFFF] text-black p-2 rounded-2xl text-lg drop-shadow h-10 w-10 flex items-center justify-center md:hidden"></i>
             </div>
@@ -81,7 +82,7 @@
           </div>
           <img src="./assets/rectangle.png" alt="">
         </section>
-        <section id="banner-2" class="container mx-auto">
+        <section id="banner-2" class="container mx-auto my-24">
           <div class="text-content space-y-8">
             <div class="flex justify-center">
               <button class="btn bg-white hover:bg-white border-none rounded-3xl text-black"><i class="fa-solid fa-arrow-right"></i>How we work</button>
@@ -90,7 +91,7 @@
             <p class="text-center">
               The barn house captivates with its combination of rustic charm and modern sophistication, <br> highlighted by weathered wood and sleek metal accents.</p>
           </div>
-          <div class="card-container grid grid-cols-4 gap-10 p-4">
+          <div class="card-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-4">
           <div class="card bg-[#E7C1D3] p-8 flex flex-col gap-3">
               <img class="h-12 w-12" src="./assets/concept.png" alt="">
               <h1 class="font-black text-xl">Concept</h1>
@@ -110,6 +111,48 @@
               <img class="h-12 w-12" src="./assets/budget-planning.png" alt="">
               <h1 class="font-black text-xl">Concept</h1>
               <p>The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+        </section>
+        <section id="banner-3" class="container mx-auto my-32">
+          <div class="text-content space-y-8">
+            <div class="flex justify-center">
+              <button class="btn bg-[rgba(171,239,95,50%)] hover:bg-[rgba(171,239,95,50%)] border-none rounded-3xl text-black"><i class="fa-solid fa-arrow-right"></i>Explore our latest works</button>
+            </div>
+            <h1 class="text-5xl font-black text-center">Our Works Process</h1>
+            <p class="text-center">
+              The barn house captivates with its combination of rustic charm and modern sophistication, <br> highlighted by weathered wood and sleek metal accents.</p>
+          </div>
+          <div class="card-container grid grid-cols-9 grid-rows-2 gap-5">
+            <div class="cards col-span-6 border p-8 rounded-xl">
+              <div class="flex gap-10">
+                <img src="./assets/img1.png" alt="">
+                <div class="text-contents flex flex-col justify-between">
+                  <h1 class="font-black text-2xl">Concept</h1>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  <h1 class="text-2xl font-black">View Details  <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] text-black p-1"></i></h1>
+                </div>
+              </div>
+            </div>
+            <div class="cards col-span-3 p-4 border rounded-3xl flex justify-center items-center">
+              <img class="w-full" src="./assets/img2.png" alt="">
+          </div>
+            <div class="cards col-span-2 p-4 border rounded-3xl flex justify-center items-center">
+                <img class="w-full" src="./assets/img3.png" alt="">
+            </div>
+            <div class="cards col-span-5 border p-8 rounded-xl">
+              <div class="flex gap-10">
+                <img src="./assets/img4.png" alt="">
+                <div class="text-contents flex flex-col justify-between">
+                  <h1 class="font-black text-2xl">Commercial</h1>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  <h1 class="text-2xl font-black">View Details  <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] text-black p-1"></i></h1>
+                </div>
+              </div>
+            </div>
+            <div class="cards col-span-2 p-4 border rounded-3xl flex justify-center items-center">
+                <img class="w-full" src="./assets/img5.png" alt="">
+            </div>
             </div>
           </div>
         </section>
